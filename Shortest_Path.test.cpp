@@ -1,5 +1,6 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/shortest_path"
 
+#include<cassert>
 #include<vector>
 #include<limits>
 #include<queue>
