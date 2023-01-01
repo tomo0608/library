@@ -4,7 +4,7 @@ data:
   verificationCategories:
   - name: .
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Shortest_Path.test.cpp
       title: Shortest_Path.test.cpp
     - icon: ':heavy_check_mark:'

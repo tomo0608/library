@@ -3,16 +3,16 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/shortest_path
     links:
     - https://judge.yosupo.jp/problem/shortest_path
   bundledCode: "#line 1 \"Shortest_Path.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/shortest_path\"\
-    \n\n#include<vector>\n#include<limits>\n#include<queue>\n#include<algorithm>\n\
+    \n\n#include<cassert>\n#include<vector>\n#include<limits>\n#include<queue>\n#include<algorithm>\n\
     #include<iostream>\n\nclass Weighted_Digraph {\npublic:\n    std::vector<std::vector<std::pair<long\
     \ long, int>>> Adjacency_List, Transpose;\n    unsigned number_of_nodes;\n   \
     \ Weighted_Digraph(unsigned n): number_of_nodes(n), Adjacency_List(n), Transpose(n)\
@@ -44,9 +44,9 @@ data:
     \ t);\n    cout << dist[t] << ' ' << path.size() - 1 << endl;\n    for (int i\
     \ = 0; i < path.size() - 1; i++)cout << path[i] << ' ' << path[i + 1] << endl;\n\
     \    return 0;\n}\n"
-  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/shortest_path\"\n\n#include<vector>\n\
-    #include<limits>\n#include<queue>\n#include<algorithm>\n#include<iostream>\n\n\
-    class Weighted_Digraph {\npublic:\n    std::vector<std::vector<std::pair<long\
+  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/shortest_path\"\n\n#include<cassert>\n\
+    #include<vector>\n#include<limits>\n#include<queue>\n#include<algorithm>\n#include<iostream>\n\
+    \nclass Weighted_Digraph {\npublic:\n    std::vector<std::vector<std::pair<long\
     \ long, int>>> Adjacency_List, Transpose;\n    unsigned number_of_nodes;\n   \
     \ Weighted_Digraph(unsigned n): number_of_nodes(n), Adjacency_List(n), Transpose(n)\
     \ {};\n\n    void add_edge(int from, int to, unsigned long long weight) {\n  \
@@ -81,8 +81,8 @@ data:
   isVerificationFile: true
   path: Shortest_Path.test.cpp
   requiredBy: []
-  timestamp: '2023-01-01 10:55:36+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2023-01-01 10:59:49+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Shortest_Path.test.cpp
 layout: document
