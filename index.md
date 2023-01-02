@@ -10,5 +10,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: unionfind.test.cpp
       title: unionfind.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: z_algorithm.test.cpp
+      title: z_algorithm.test.cpp
 layout: toppage
 ---
