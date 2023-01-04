@@ -8,6 +8,9 @@ data:
       path: Shortest_Path.test.cpp
       title: Shortest_Path.test.cpp
     - icon: ':heavy_check_mark:'
+      path: static_range_sum.test.cpp
+      title: static_range_sum.test.cpp
+    - icon: ':heavy_check_mark:'
       path: unionfind.test.cpp
       title: unionfind.test.cpp
     - icon: ':heavy_check_mark:'
