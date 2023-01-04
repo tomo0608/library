@@ -1,28 +1,26 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/static_range_sum"
 
-#include <vector>
+#include<vector>
 #include<cassert>
 
 template <class S, S(*op)(S, S), S(*e)(), S(*inv)(S)>
-class static_range_sum {
-public:
-    static_range_sum(): _n(0) {}
-    static_range_sum(std::vector<S>& a): _n(a.size()) {
-        range_sum.resize(_n + 1);
+struct static_range_sum {
+    int n;
+    std::vector<S> range_sum;
+
+    static_range_sum(std::vector<S>& a) {
+        n = (int)a.size();
+        range_sum.resize(n + 1);
         range_sum[0] = e();
-        for (int i = 0; i < _n; i++) {
+        for (int i = 0; i < n; i++) {
             range_sum[i + 1] = op(range_sum[i], a[i]);
         }
     }
 
-    S query(int l, int r) {
-        assert(0 <= l && l < r&& r <= _n);
+    inline S query(int l, int r) const {
+        assert(0 <= l && l < r&& r <= n);
         return op(inv(range_sum[l]), range_sum[r]);
     }
-
-private:
-    unsigned _n;
-    std::vector<S> range_sum;
 };
 
 using S = long long;
