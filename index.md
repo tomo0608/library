@@ -8,6 +8,15 @@ data:
       path: 2D_Segment_Tree.test.cpp
       title: 2D_Segment_Tree.test.cpp
     - icon: ':heavy_check_mark:'
+      path: DisjointSparseTable.test.cpp
+      title: DisjointSparseTable.test.cpp
+    - icon: ':x:'
+      path: SWAG.test.cpp
+      title: SWAG.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Segment_Tree.test.cpp
+      title: Segment_Tree.test.cpp
+    - icon: ':heavy_check_mark:'
       path: Shortest_Path.test.cpp
       title: Shortest_Path.test.cpp
     - icon: ':heavy_check_mark:'
