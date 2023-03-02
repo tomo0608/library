@@ -5,6 +5,9 @@ data:
   - name: .
     pages:
     - icon: ':heavy_check_mark:'
+      path: 2D_Segment_Tree.test.cpp
+      title: 2D_Segment_Tree.test.cpp
+    - icon: ':heavy_check_mark:'
       path: Shortest_Path.test.cpp
       title: Shortest_Path.test.cpp
     - icon: ':heavy_check_mark:'
