@@ -10,7 +10,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: DisjointSparseTable.test.cpp
       title: DisjointSparseTable.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: SWAG.test.cpp
       title: SWAG.test.cpp
     - icon: ':heavy_check_mark:'
