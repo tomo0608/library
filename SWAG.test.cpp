@@ -13,10 +13,10 @@ namespace tomo0608 {
         void push_back(const Monoid& c) {
             v.push_back(c);
         }
-        size_t size() {
+        int size() {
             return v.size();
         }
-        Monoid fold(size_t i, size_t j) { //[l, r)
+        Monoid fold(int i, int j) { //[l, r)
             assert(i < j && j <= v.size());
             assert(last_i <= i && last_j <= j);
             last_i = i, last_j = j;
@@ -24,7 +24,7 @@ namespace tomo0608 {
             while (l < i) {
                 if (back.empty()) {
                     Monoid tmp = e();
-                    for (size_t u = r; u-- > l; ) {
+                    for (int u = r; u-- > l; ) {
                         tmp = op(v[u], tmp);
                         back.emplace(tmp);
                     }
@@ -40,7 +40,7 @@ namespace tomo0608 {
         std::vector<Monoid> v;
         Monoid front;
         std::stack<Monoid> back;
-        size_t l, r, last_i, last_j;
+        int l, r, last_i, last_j;
     };
 }
 
