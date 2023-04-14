@@ -11,7 +11,7 @@ data:
     PROBLEM: https://judge.yosupo.jp/problem/unionfind
     links:
     - https://judge.yosupo.jp/problem/unionfind
-  bundledCode: "#line 1 \"unionfind.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/unionfind\"\
+  bundledCode: "#line 1 \"test/unionfind.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/unionfind\"\
     \n#include<bits/stdc++.h>\n\nnamespace tomo0608 {\n\n    struct unionfind {\n\
     \    public:\n        unionfind(): _n(0) {}\n        unionfind(int n): _n(n),\
     \ parent_or_size(n, -1) {}\n\n        int find(int a) {\n            assert(0\
@@ -48,15 +48,15 @@ data:
     \    return 0;\n}\n\n"
   dependsOn: []
   isVerificationFile: true
-  path: unionfind.test.cpp
+  path: test/unionfind.test.cpp
   requiredBy: []
-  timestamp: '2023-03-02 17:43:31+09:00'
+  timestamp: '2023-04-14 17:06:24+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: unionfind.test.cpp
+documentation_of: test/unionfind.test.cpp
 layout: document
 redirect_from:
-- /verify/unionfind.test.cpp
-- /verify/unionfind.test.cpp.html
-title: unionfind.test.cpp
+- /verify/test/unionfind.test.cpp
+- /verify/test/unionfind.test.cpp.html
+title: test/unionfind.test.cpp
 ---

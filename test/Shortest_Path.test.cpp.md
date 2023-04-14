@@ -11,7 +11,7 @@ data:
     PROBLEM: https://judge.yosupo.jp/problem/shortest_path
     links:
     - https://judge.yosupo.jp/problem/shortest_path
-  bundledCode: "#line 1 \"Shortest_Path.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/shortest_path\"\
+  bundledCode: "#line 1 \"test/Shortest_Path.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/shortest_path\"\
     \n\n#include<cassert>\n#include<vector>\n#include<limits>\n#include<queue>\n#include<algorithm>\n\
     #include<iostream>\n\nnamespace tomo0608 {\n\n    class Weighted_Digraph {\n \
     \   public:\n        std::vector<std::vector<std::pair<long long, int>>> Adjacency_List,\
@@ -85,15 +85,15 @@ data:
     \ << path[i] << ' ' << path[i + 1] << endl;\n    return 0;\n}"
   dependsOn: []
   isVerificationFile: true
-  path: Shortest_Path.test.cpp
+  path: test/Shortest_Path.test.cpp
   requiredBy: []
-  timestamp: '2023-03-02 17:46:39+09:00'
+  timestamp: '2023-04-14 17:06:24+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: Shortest_Path.test.cpp
+documentation_of: test/Shortest_Path.test.cpp
 layout: document
 redirect_from:
-- /verify/Shortest_Path.test.cpp
-- /verify/Shortest_Path.test.cpp.html
-title: Shortest_Path.test.cpp
+- /verify/test/Shortest_Path.test.cpp
+- /verify/test/Shortest_Path.test.cpp.html
+title: test/Shortest_Path.test.cpp
 ---

@@ -11,7 +11,7 @@ data:
     PROBLEM: https://judge.yosupo.jp/problem/tree_diameter
     links:
     - https://judge.yosupo.jp/problem/tree_diameter
-  bundledCode: "#line 1 \"tree_diameter.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/tree_diameter\"\
+  bundledCode: "#line 1 \"test/tree_diameter.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/tree_diameter\"\
     \n\n#include<iostream>\n#include<algorithm>\n#include<vector>\n#include<utility>\n\
     #include<queue>\n#include<tuple>\n\nstd::vector<int> restore_path(std::vector<int>\
     \ par, int goal) {\n    std::vector<int> path = { goal };\n    while (par[path.back()]\
@@ -60,15 +60,15 @@ data:
     \ i++)cout << path[i] << ' ';\n    cout << endl;\n    return 0;\n}"
   dependsOn: []
   isVerificationFile: true
-  path: tree_diameter.test.cpp
+  path: test/tree_diameter.test.cpp
   requiredBy: []
-  timestamp: '2023-01-04 18:51:12+09:00'
+  timestamp: '2023-04-14 17:06:24+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: tree_diameter.test.cpp
+documentation_of: test/tree_diameter.test.cpp
 layout: document
 redirect_from:
-- /verify/tree_diameter.test.cpp
-- /verify/tree_diameter.test.cpp.html
-title: tree_diameter.test.cpp
+- /verify/test/tree_diameter.test.cpp
+- /verify/test/tree_diameter.test.cpp.html
+title: test/tree_diameter.test.cpp
 ---

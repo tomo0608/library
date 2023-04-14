@@ -11,7 +11,7 @@ data:
     PROBLEM: https://judge.yosupo.jp/problem/zalgorithm
     links:
     - https://judge.yosupo.jp/problem/zalgorithm
-  bundledCode: "#line 1 \"z_algorithm.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/zalgorithm\"\
+  bundledCode: "#line 1 \"test/z_algorithm.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/zalgorithm\"\
     \n\n#include <bits/stdc++.h>\n\nnamespace tomo0608 {\n    template <class T> std::vector<int>\
     \ z_algorithm(std::vector<T> S) {\n        size_t n = S.size();\n        std::vector<int>\
     \ Z(n);\n        Z[0] = n;\n        int i = 1, j = 0;\n        while (i < n) {\n\
@@ -55,15 +55,15 @@ data:
     }"
   dependsOn: []
   isVerificationFile: true
-  path: z_algorithm.test.cpp
+  path: test/z_algorithm.test.cpp
   requiredBy: []
-  timestamp: '2023-03-02 17:43:31+09:00'
+  timestamp: '2023-04-14 17:06:24+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: z_algorithm.test.cpp
+documentation_of: test/z_algorithm.test.cpp
 layout: document
 redirect_from:
-- /verify/z_algorithm.test.cpp
-- /verify/z_algorithm.test.cpp.html
-title: z_algorithm.test.cpp
+- /verify/test/z_algorithm.test.cpp
+- /verify/test/z_algorithm.test.cpp.html
+title: test/z_algorithm.test.cpp
 ---
