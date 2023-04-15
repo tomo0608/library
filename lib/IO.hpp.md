@@ -2,10 +2,19 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: test/Polynomial/Exp.test.cpp
+    title: test/Polynomial/Exp.test.cpp
+  - icon: ':x:'
+    path: test/Polynomial/Inv.test.cpp
+    title: test/Polynomial/Inv.test.cpp
+  - icon: ':x:'
+    path: test/Polynomial/Log.test.cpp
+    title: test/Polynomial/Log.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "#line 1 \"lib/IO.hpp\"\n#include<iostream>\n#include<set>\n#include<vector>\n\
@@ -99,8 +108,11 @@ data:
   path: lib/IO.hpp
   requiredBy: []
   timestamp: '2023-04-14 17:06:24+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - test/Polynomial/Log.test.cpp
+  - test/Polynomial/Exp.test.cpp
+  - test/Polynomial/Inv.test.cpp
 documentation_of: lib/IO.hpp
 layout: document
 redirect_from:

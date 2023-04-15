@@ -12,13 +12,13 @@ data:
     - icon: ':heavy_check_mark:'
       path: lib/DisjointSparseTable.hpp
       title: lib/DisjointSparseTable.hpp
-    - icon: ':warning:'
+    - icon: ':x:'
       path: lib/Formal_Power_Series.hpp
       title: lib/Formal_Power_Series.hpp
     - icon: ':heavy_check_mark:'
       path: lib/Heavy_Light_Decomposition.hpp
       title: lib/Heavy_Light_Decomposition.hpp
-    - icon: ':warning:'
+    - icon: ':x:'
       path: lib/IO.hpp
       title: lib/IO.hpp
     - icon: ':warning:'
@@ -72,5 +72,16 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/z_algorithm.test.cpp
       title: test/z_algorithm.test.cpp
+  - name: test/Polynomial
+    pages:
+    - icon: ':x:'
+      path: test/Polynomial/Exp.test.cpp
+      title: test/Polynomial/Exp.test.cpp
+    - icon: ':x:'
+      path: test/Polynomial/Inv.test.cpp
+      title: test/Polynomial/Inv.test.cpp
+    - icon: ':x:'
+      path: test/Polynomial/Log.test.cpp
+      title: test/Polynomial/Log.test.cpp
 layout: toppage
 ---
