@@ -1,12 +1,13 @@
+#pragma once
 #include<assert.h>
 
 namespace tomo0608 {
     template<typename U = unsigned, int B = 32>
     class binary_trie {
         struct node {
-            int cnt; // 部分木の要素数
-            node* ch[2]; // 左右の子のポインタ
-            node(): cnt(0), ch{ nullptr, nullptr } {}
+            int cnt; // size of subtree
+            node* ch[2]; // pointer
+            node() : cnt(0), ch{ nullptr, nullptr } {}
         };
         node* add(node* t, U val, int b = B - 1) {
             if (!t)t = new node;
@@ -44,7 +45,7 @@ namespace tomo0608 {
         }
         node* root;
     public:
-        binary_trie(): root(nullptr) {}
+        binary_trie() : root(nullptr) {}
         int size()const {
             return root ? root->cnt : 0;
         }
@@ -55,12 +56,13 @@ namespace tomo0608 {
             root = add(root, val);
         }
         void erase(U val) {
+            assert(count(val));
             root = sub(root, val);
         }
-        U max_element(U bias = 0)const { // a[i] ^ bias が最大となる a[i]を返す
+        U max_element(U bias = 0)const { // return a[i] such that a[i] ^ bias is maximized
             return get_min(root, ~bias);
         }
-        U min_element(U bias = 0)const { // a[i] ^ bias が最小となる a[i]を返す
+        U min_element(U bias = 0)const { // return a[i] such that a[i] ^ bias is minimized
             return get_min(root, bias);
         }
         int lower_bound(U val) { // return id

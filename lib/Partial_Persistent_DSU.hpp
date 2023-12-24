@@ -9,7 +9,7 @@ namespace tomo0608 {
         pp_dsu(int n) : _n(n), parent_or_size(n, -1), num(n), time(n, 1e9) {
             for (int i = 0; i < _n; ++i)num[i].emplace_back(-1, -1);
         }
-        // 時刻tにおけるxの親を返す
+        // return parent of x in t
         int find(int a, int t) {
             assert(0 <= a && a < _n);
             assert(0 <= t && t < 1e9);
@@ -40,9 +40,9 @@ namespace tomo0608 {
             return -std::prev(std::lower_bound(num[a].begin(), num[a].end(), std::make_pair(t, 0)))->second;
         }
     private:
-        int _n; // 全頂点数
-        std::vector<int> parent_or_size; // 非負の場合は親, 負の場合は-size
-        std::vector<int> time; //time[x]:xが根ではなくなった瞬間の時刻
-        std::vector<std::vector<std::pair<int, int>>> num; // (時刻, 頂点数)を要素に持つvector
+        int _n; // number of nodes
+        std::vector<int> parent_or_size; // return parent if nonnegative, otherwise return -size
+        std::vector<int> time; //time[x]: time x is no longer root
+        std::vector<std::vector<std::pair<int, int>>> num; // vector (t, nodes)
     };
 }

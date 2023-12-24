@@ -1,4 +1,7 @@
-#include<bits/stdc++.h>
+#pragma once
+
+#include<vector>
+#include<assert.h>
 
 namespace tomo0608 {
     struct HeavyLightDecomposition {

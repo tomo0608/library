@@ -1,11 +1,12 @@
+#pragma once
 #include<vector>
 #include<stack>
 #include<cassert>
 
 namespace tomo0608 {
     template<class Monoid, Monoid(*op)(Monoid, Monoid), Monoid(*e)()> struct SWAG {
-        SWAG():l(0), r(0), last_i(0), last_j(0), front(e()), v(0), back() {}
-        explicit SWAG(std::vector<Monoid>& _v):l(0), r(0), last_i(0), last_j(0), front(e()), v(_v.size()), back() {
+        SWAG() :l(0), r(0), last_i(0), last_j(0), front(e()), v(0), back() {}
+        explicit SWAG(std::vector<Monoid>& _v) :l(0), r(0), last_i(0), last_j(0), front(e()), v(_v.size()), back() {
             std::copy(_v.begin(), _v.end(), v.begin());
         }
         void push_back(const Monoid& c) {
