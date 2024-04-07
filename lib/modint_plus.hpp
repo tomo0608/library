@@ -36,7 +36,7 @@ namespace tomo0608 {
             //if(n >= MAX_SIZE)return com_naive(n, k);
             return fact_[n] * finv_[k] * finv_[n - k];
         }
-        constexpr mint perm(int n, int k) const noexcept {
+        constexpr mint permi(int n, int k) const noexcept {
             if (n < k || n < 0 || k < 0)return 0;
             return fact_[n] * finv_[n - k];
         }
