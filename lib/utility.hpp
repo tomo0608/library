@@ -5,6 +5,8 @@
 #include<cassert>
 #include<algorithm>
 #include<numeric>
+#include<random>
+#include<chrono>
 
 namespace tomo0608 {
 #define ALL(x) x.begin(),x.end()
@@ -45,4 +47,32 @@ namespace tomo0608 {
         std::sort(begin(ret), end(ret), [&](int i, int j) { return greater ? v[i] > v[j] : v[i] < v[j]; });
         return ret;
     }
+
+    struct Random_Number_Generator {
+        std::mt19937_64 mt;
+
+        Random_Number_Generator() : mt(std::chrono::steady_clock::now().time_since_epoch().count()) {}
+
+        // 区間 [l,r) の整数で乱数発生
+        int64_t operator()(int64_t l, int64_t r) {
+            std::uniform_int_distribution<int64_t> dist(l, r - 1);
+            return dist(mt);
+        }
+
+        // 区間 [0,r) の整数で乱数発生
+        int64_t operator()(int64_t r) { return (*this)(0, r); }
+    } rng;
+
+    struct Timer {
+        std::chrono::system_clock::time_point start_time;
+
+        Timer() { reset(); }
+
+        void reset() { start_time = std::chrono::system_clock::now(); }
+
+        int get_time() {
+            std::chrono::system_clock::time_point now_time = std::chrono::system_clock::now();
+            return std::chrono::duration_cast<std::chrono::milliseconds>(now_time - start_time).count();
+        }
+    } timer;
 }
