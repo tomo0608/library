@@ -75,4 +75,5 @@ namespace tomo0608 {
             return std::chrono::duration_cast<std::chrono::milliseconds>(now_time - start_time).count();
         }
     } timer;
+    
 }
